@@ -10,5 +10,5 @@ This Packer template will create EC2 image of Ubuntu Bionic64 with Docker versio
 ## How to use
 - clone repo locally
 - export AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
+- export AWS_SECRET_ACCESS_KEY
 - packer build ubuntu_docker_ce_ami.json
