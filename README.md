@@ -14,7 +14,7 @@ This Packer template will
 - Hashicorp TFE license
 - Airgap package
 - Bootstrap installer
-
+- Valid SSL sertificate (fullchain and private key)
 
 ## How to use
 - clone repo locally
@@ -26,7 +26,7 @@ git clone https://github.com/berchev/packer-ec2-bionic64-docker.git
 export AWS_ACCESS_KEY_ID=XXXXXXXX
 export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXX
 ```
-- important note!!! Assests folder is not uploaded due to security reasins. This directory cantain sensitive information. Before use of this project you need to do the following:
+- important note!!! Assests folder is not uploaded due to security reasons. This directory cantain sensitive information. Before use of this project you need to do the following:
   - create diretory called `assets` into you root directory of the repo 
   - place inside your Valid SSL sertificate (fullchain and private key)
   - bootstrap installer
