@@ -31,6 +31,7 @@ sudo usermod -aG docker ubuntu
 
 sudo systemctl enable docker
 
+# Make sure you populate your own ACCESS and SECURITY key
 aws configure set aws_access_key_id YOUR_AWS_ACCESS_KEY
 
 aws configure set aws_secret_access_key YOUR_AWS_SECURITY_KEY
@@ -39,6 +40,7 @@ aws configure set default.region us-east-1
 
 sudo mkdir -p /opt/tfe-installer/
 
+# Make sure you will edit this lines according to your needs
 sudo tar -zvxf /tmp/assets/replicated.tar.gz -C /opt/tfe-installer/
 
 cp /tmp/assets/fullchain.pem /opt/tfe-installer/fullchain.pem
